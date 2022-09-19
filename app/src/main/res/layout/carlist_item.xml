@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <!-- This will display the make and model of the car-->
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:text="Car Name" />
+
+    <!-- This will display the transmission type of the car-->
+    <TextView
+        android:id="@+id/car_transmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/car_name"
+        tools:text="Transmission type" />
+
+    <!-- This will display the colour of the car-->
+    <TextView
+        android:id="@+id/car_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:text="Car colour" />
+
+    <!-- This will display the drive type of the car-->
+    <TextView
+        android:id="@+id/car_drive_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/car_color"
+        tools:text="Car Drive Type" />
+
+    <!-- This will display the fuel type of the car-->
+    <TextView
+        android:id="@+id/car_fuel_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_transmission"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/car_drive_type"
+        tools:text="Car fuel_type" />
+
+    <!-- This will display the car type of the car-->
+    <TextView
+        android:id="@+id/car_car_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_transmission"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/car_fuel_type"
+        tools:text="Car Type" />
+
+</RelativeLayout>
