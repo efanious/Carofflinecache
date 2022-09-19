@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CarActivity">
+
+    <!-- The recycler view-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_viewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        tools:listitem="@layout/carlist_item" />
+
+    <!--Initially the app will fetch data from the
+       web, hence a progress bar for that-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <!--If the application is not able to
+        fetch/ expose the data to the view-->
+    <TextView
+        android:id="@+id/text_view_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        tools:text="Error Message"
+        tools:visibility="visible" />
+
+</RelativeLayout>

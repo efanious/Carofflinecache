@@ -1,11 +1,12 @@
-package com.example.carofflinecache
+package com.example.carofflinecache.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.carofflinecache.R
 
-class MainActivity : AppCompatActivity() {
+class CarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_car)
     }
 }
